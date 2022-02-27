@@ -47,6 +47,7 @@ public class KafkaConfiguration {
     @Bean
     @Qualifier("simplekafka")
     public KafkaTemplate<String, String> getKafkaTemplate(){
+
         return new KafkaTemplate<>(producerFactoryString());
     }
 }

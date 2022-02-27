@@ -5,6 +5,8 @@ public class ApplicationConstants {
         super();
     }
 
-    public static final String SUCCESS_TEXT = "Message Published Successfully";
+    public static final String SUCCESS_TEXT = "Text Message Published Successfully";
+    public static final String SUCCESS_JSON_TEXT = "JSON Message Published Successfully";
     public static final String KAFKA_TOPIC = "kafka-example";
+    public static final String JSON_KAFKA_TOPIC = "kafka_model_json";
 }

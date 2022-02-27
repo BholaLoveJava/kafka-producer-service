@@ -32,8 +32,8 @@ public class ProducerService {
 
     public String publishJSONMessageService(final EmployeeModel employeeData){
         logger.info("IN ProducerService :: publishJSONMessageService ()");
-        jsonKafkaTemplate.send(ApplicationConstants.KAFKA_TOPIC,employeeData);
+        jsonKafkaTemplate.send(ApplicationConstants.JSON_KAFKA_TOPIC,employeeData);
         logger.info("OUT ProducerService :: publishJSONMessageService ()");
-        return ApplicationConstants.SUCCESS_TEXT;
+        return ApplicationConstants.SUCCESS_JSON_TEXT;
     }
 }
