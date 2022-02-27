@@ -19,14 +19,14 @@ bin/kafka-server-start.sh config/server.properties
 bin/kafka-topics.sh –create –zookeeper localhost:2181 –replication-factor 1 –partitions 1 –topic topic_name
 
 ##For Windows machine: 
-.\bin\windows\kafka-topics.bat –create –zookeeper localhost:2181 –replication-factor 1 –partitions 1 –topic kafka-example
+.\bin\windows\kafka-topics.bat –create –zookeeper localhost:2181 –replication-factor 1 –partitions 1 –topic kafka_example
 
 ##Now to see the messages on the Kafka server in the real-time, use the command below:
 ##For MAC and Linux: 
 bin/kafka-console-consumer.sh –bootstrap-server localhost:9092 –topic topic_name –from-beginning
 
 ##For Windows Machine 
-.\bin\windows\kafka-console-consumer.bat –bootstrap-server localhost:9092 –topic kafka-example –from-beginning
+.\bin\windows\kafka-console-consumer.bat –bootstrap-server localhost:9092 –topic kafka_example –from-beginning
 
 ##Publish simple Message to Kakfa Topic
 ## HTTP Method : GET
@@ -39,6 +39,6 @@ bin/kafka-console-consumer.sh –bootstrap-server localhost:9092 –topic topic_
 {
    "name":"Bhola Yadav",
     "department":"IT Engineering",
-    "salary": 120000.00,
+    "salary": 20000.00,
     "address":"Grugaon" 
 }
